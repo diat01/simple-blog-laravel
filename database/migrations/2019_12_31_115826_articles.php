@@ -19,7 +19,7 @@ class Articles extends Migration
             $table->string('title');
             $table->string('image');
             $table->longText('content');
-            $table->integer('hit')->default(0);
+            $table->integer('hit')->default(1);
             $table->integer('status')->default(0)->comment('0:pasif 1:aktif');
             $table->string('slug');
             $table->softDeletes();
