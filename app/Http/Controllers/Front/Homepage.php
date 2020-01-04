@@ -24,6 +24,7 @@ class Homepage extends Controller
         }
         view()->share('pages', Page::whereStatus(1)->orderBy('order', 'ASC')->get());
         view()->share('categories', Category::whereStatus(1)->inRandomOrder()->get());
+        view()->share('config', Config::find(1));
     }
 
     public function index()
