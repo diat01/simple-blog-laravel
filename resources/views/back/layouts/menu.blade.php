@@ -39,7 +39,7 @@
                 <div id="collapseTwo" class="collapse @if(Request::segment(2) == 'makaleler') show @endif"
                     aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <h6 class="collapse-header">Makaler Islemleri:</h6>
+                        <h6 class="collapse-header">Makale Islemleri:</h6>
                         <a class="collapse-item @if(Request::segment(2) == 'makaleler' && !Request::segment(3)) active @endif"
                             href="{{route('admin.makaleler.index')}}">Tum Makaleler</a>
                         <a class="collapse-item @if(Request::segment(2) == 'makaleler' && Request::segment(3) == 'olustur') active @endif"
